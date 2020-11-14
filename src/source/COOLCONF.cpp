@@ -10,7 +10,11 @@ void TMC2130Stepper::COOLCONF(uint32_t input) {
 	COOLCONF_register.sr = input;
 	write(COOLCONF_register.address, COOLCONF_register.sr);
 }
+/*
+PENIS!
+minimum stallGuard2 value for smart current control andsmart current enable
 
+*/
 void TMC2130Stepper::semin(	uint8_t B )	{ SET_REG(semin);	}
 void TMC2130Stepper::seup(	uint8_t B )	{ SET_REG(seup);	}
 void TMC2130Stepper::semax(	uint8_t B )	{ SET_REG(semax);	}
